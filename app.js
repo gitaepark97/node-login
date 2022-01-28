@@ -1,17 +1,17 @@
+'use strict'
+
 const express = require('express')
 const app = express()
+
+const PORT = 8000
+
+const home = require('./routes/home')
 
 app.set('views', './views')
 app.set('view engine', 'ejs')
 
-app.get('/', (req, res) => {
-  res.render('home/index')
-})
+app.use('/', home)
 
-app.get('/login', (req, res) => {
-  res.render('home/login')
-})
-
-app.listen(8000, () => {
+app.listen(PORT, () => {
   console.log('Server with express is running')
 })
