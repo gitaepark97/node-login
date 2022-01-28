@@ -3,13 +3,23 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "bin": {
+    "node-login": "www.js"
+  },
   "scripts": {
+    "start": "nodemon ./bin/www.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
+  "keywords": [],
+  "license": "MIT",
   "dependencies": {
     "ejs": "^3.1.6",
     "express": "^4.17.2"
+  },
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gitaepark97/node-login"
   }
 }
